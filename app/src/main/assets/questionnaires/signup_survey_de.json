@@ -1,0 +1,80 @@
+{
+  "questions": [
+    {
+      "id": "Initial_question",
+      "type": "Info",
+      "text": "Diese App zielt darauf ab, Daten (hauptsächlich Husten, Atmung und Stimme) im Rahmen eines Projekts (covid-19-sounds.org) zu sammeln, die die Diagnose von COVID-19 informieren könnten.\n\n\nDie App wird grundlegende demographische Daten sowie Informationen zu Ihrer Krankengeschichte sammeln, darüberhinaus werden einige Sprachproben (während Sie Text vom Bildschirm ablesen) und Sequenzen der Atmung und des Hustens aufgenommen. Ihr Standort wird nur einmal von der App abfragt werden. Beachten Sie, dass Sie mindestens 16 Jahre alt sein müssen. Sie können unsere Datenschutzbestimmungen unter covid-19-sounds.org/privacy.html einsehen.\n\n"
+    },
+    {
+      "id": "User_sex",
+      "type": "RadioButtons",
+      "text": "Welches ist Ihr biologisches Geschlecht?",
+      "options": [
+        "männlich",
+      "weiblich",
+      "divers",
+      "Keine Angabe"
+    ]
+    },
+    {
+      "id": "User_age",
+      "type": "RadioButtons",
+      "text": "Wie alt sind Sie?",
+      "options": [
+        "Unter 20",
+      "20-29",
+      "30-39",
+      "40-49",
+      "50-59",
+      "60-69",
+      "70-79",
+      "80-89",
+      "90 oder älter",
+      "Keine Angabe"
+    ]
+    },
+    {
+      "id": "Medical_history",
+      "type": "Checkbox",
+      "text": "Haben Sie eine oder mehrere der unten genannten Erkrankungen? (kann mehr als eine auswählen)",
+      "options": [
+        "Nichts trift zu",
+      "Keine Angabe",
+      "Asthma",
+      "Mukoviszidose",
+        "chronisch obstruktive Lungenerkrankung/Lungenaufblähung",
+      "Lungenfibrose",
+      "Andere Erkrankung der Lunge",
+      "Hoher Blutdruck",
+      "Angina/Herzenge",
+      "Frührer Schlaganfall oder transitorische ischämische Attacke",
+      "Frührer Herzinfarkt",
+      "Herzklappenfehler",
+      "Andere Erkrankung der Herzen",
+      "Diabetes",
+      "Krebs",
+      "Frührer Organtransplantation",
+      "HIV or an beeinträchtigtes Immunsystem",
+      "Andere langfristige Erkrankung"
+    ]
+    },
+
+    {
+      "id": "Smoking",
+      "type": "RadioButtons",
+      "text": "Rauchen Sie zur Zeit oder haben Sie in der Vergangenheit einmal geraucht (einschließlich E-Zigaretten)",
+      "options": [
+        "Nie",
+      "Keine Angabe",
+      "Ex-Raucher/in",
+      "Gegenwärtige/r Raucher/in (1-10 Zigaretten am Tag)",
+      "Gegenwärtige/r Raucher/in (11 oder mehr Zigaretten pro Tag)"
+    ]
+    },
+    {
+      "id": "thankyou",
+      "type": "Info",
+      "text": "Vielen Dank! Ihre Teilnahme ist für uns überaus hilfreich. Wir werden Sie nun nach Ihren Symptomen befragen.\n\n"
+    }
+  ]
+}

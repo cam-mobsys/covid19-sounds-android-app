@@ -1,0 +1,120 @@
+{
+  "questions": [
+    {
+    	"id": "symptoms",
+    	"type": "Checkbox",
+    	"text": "Ați avut vreuna din următoarele simptome astăzi? (puteți selecta mai mult de una)",
+		"options": [
+			"Niciuna",
+			"Prefer să nu menționez",
+			"Febră (stare febrilă sau mai caldă decât de obicei)",
+			"Frisoane",
+			"Tuse uscată",
+			"Tuse umedă",
+			"Dificultăți în respirație sau probleme cu respirația",
+			"Apăsare în piept",
+			"Pierderea gustului și a mirosului",
+			"Amețeli, confuzie sau vertij",
+			"Dureri de cap",
+			"Dureri musculare",
+			"Dureri de gât",
+			"Nas curgător sau înfundat"
+		]
+	},
+	  {
+		  "id": "covid",
+		  "type": "RadioButtons",
+		  "text": "Care este actualul status de testare COVID-19 al dumneavoastra?",
+		  "options": [
+			  "Nu am testat niciodata",
+			  "Pozitiv",
+			  "Negativ",
+			  "Prefer sa nu raspund"
+		  ]
+	  },
+
+	  {
+		  "id": "never_covid",
+		  "type": "RadioButtons",
+		  "text": "Credeti ca ati fost vreodata infectat cu COVID-19?",
+		  "options": [
+			  "Da, acum",
+			  "Da, candva in ultimele 14 zile",
+			  "Da, acum mai mult de 14 zile",
+			  "Niciodata"
+		  ],
+		  "dependency": {
+			  "id": "covid",
+			  "answer": "Never Tested"
+		  }
+	  },
+
+	  {
+		  "id": "positive_covid",
+		  "type": "RadioButtons",
+		  "text": "Cand ati testat pozitiv?",
+		  "options": [
+			  "In decursul ultimelor 14 zile",
+			  "Acum mai mult de 14 zile"
+		  ],
+		  "dependency": {
+			  "id": "covid",
+			  "answer": "Positive"
+		  }
+	  },
+	  {
+		  "id": "negative_covid",
+		  "type": "RadioButtons",
+		  "text": "Ati mai testat pozitiv in trecut?",
+		  "options": [
+			  "Niciodata",
+			  "In ultimele 14 zile",
+			  "Acum mai mult de 14 zile"
+		  ],
+		  "dependency": {
+			  "id": "covid",
+			  "answer": "Negative"
+		  }
+	  },
+	  {
+		  "id": "hospital",
+		  "type": "RadioButtons",
+		  "text": "Vă aflați în spital în momentul de față?",
+		  "options": [
+			  "Da",
+			  "Nu",
+        "Prefer să nu menționez"
+		  ]
+	  },
+	  {
+		  "id": "breathe",
+		  "type": "AudioRecord",
+		  "text": "Apăsați pe butonul de ‘‘Înregistrează’ de mai jos și inspirați și expirați adânc pe gură timp de cinci minute. Vă rugăm să faceți asta într-un mediu liniștit. După ce ați încheiat, apăsați 'stop'.",
+		  "options": [
+			  "30"
+		  ]
+	  },
+    {
+    	"id": "cough",
+    	"type": "AudioRecord",
+    	"text": "Apăsați pe butonul de ‘‘Înregistrează’ de mai jos și tușiți de trei ori. După care apăsați 'stop'.",
+		"options": [
+			"10"
+		]
+	},
+	  {
+		  "id": "instructions",
+		  "type": "Info",
+		  "text": "În următoarea fereastră vom afișa textul pe care ar trebui să îl citiți.\n Nu vă faceți griji dacă tușiți în timp ce citiți, vă rugăm să continuați înregistrarea"
+
+	  },
+	  {
+		  "id": "voice",
+		  "type": "AudioRecord",
+		  "text": "Apăsați pe butonul de ‘Înregistrează’ de mai jos și citiți cu voce tare următoarea propoziție de 3 ori, după care apăsați 'stop':\n\n''Sper ca datele mele să poată ajuta la gestionarea pandemiei''",
+		  "options":[
+			  "30"
+		  ]
+	  }
+    ]
+}

@@ -1,0 +1,80 @@
+{
+  "questions": [
+     {
+        "id": "Initial_question",
+        "type": "Info",
+        "text": "Este aplicativo tem como objetivo coletar dados (principalmente tosse, respiração e voz) como parte de um projeto (covid-19-sounds.org) que poderia informar o diagnóstico de COVID-19.\n\n\nO aplicativo coletará dados demográficos básicos, histórico médico, algumas amostras de voz (enquanto você lê texto na tela) e alguns segundos de respiração e tosse. Também coletamos uma amostra da sua localização. Observe que você deve ter 16 anos ou mais. Você pode ver nossa política de privacidade em covid-19-sounds.org/privacy.html\n\n"
+     },
+     {
+        "id": "User_sex",
+        "type": "RadioButtons",
+        "text": "Qual é o seu sexo biológico?",
+        "options": [
+	        "Macho",
+	        "Fêmea",
+            "Outro",
+          "Prefiro não dizer"
+        ]
+     },
+     {
+        "id": "User_age",
+        "type": "RadioButtons",
+        "text": "Qual é a sua idade?",
+        "options": [
+              "Abaixo de 20",
+              "20-29",
+              "30-39",
+              "40-49",
+              "50-59",
+              "60-69",
+              "70-79",
+              "80-89",
+              "Mais de 90",
+          "Prefiro não dizer"
+           ]
+     },
+     {
+        "id": "Medical_history",
+        "type": "Checkbox",
+        "text": "Você tem algum desses problemas de saúde? (Você pode escolher mais de uma opção)",
+        "options": [
+          "Nenhum",
+          "Prefiro não dizer",
+          "Asma",
+          "Fibrose cística",
+          "Doença pulmonar obstrutiva crónica/bronquite crónica/enfisema",
+          "Fibrose pulmonar",
+          "Outra doença pulmonar",
+          "Pressão alta",
+          "Angina",
+          "Acidente vascular cerebral anterior ou acidente isquémico transitório",
+          "Ataque cardíaco anterior",
+          "Valvopatia",
+          "Outra doença cardíaca",
+          "Diabetes",
+          "Câncer/cancro",
+          "Transplantação de órgãos anterior",
+          "HIV ou sistema imune comprometido",
+          "Outra doença crónica"
+           ]
+     },
+
+    {
+      "id": "Smoking",
+      "type": "RadioButtons",
+      "text": "Você fuma ou fumou no passado (contando cigarros eletrônicos)?",
+      "options": [
+        "Nunca fumou",
+        "Prefiro não dizer",
+        "Ex-fumante",
+        "Fumante (1-10 cigarros por dia)",
+        "Fumante (11 ou mais cigarros por dia)"
+      ]
+    },
+    {
+      "id": "thankyou",
+      "type": "Info",
+      "text": "Obrigado! Sua participação é extremamente útil para nós. Agora, iniciaremos um questionário de sintomas."
+    }
+  ]
+}

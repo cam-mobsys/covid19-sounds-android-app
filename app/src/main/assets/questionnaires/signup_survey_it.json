@@ -1,0 +1,82 @@
+{
+  "questions": [
+    {
+      "id": "Initial_question",
+      "type": "Info",
+      "text": "Questa app ha lo scopo di raccogliere dati (principalmente tosse, respiro e voce) come parte di un progetto (covid-19-sounds.org) che potrebbe informare la diagnosi di COVID-19.\n\n\nLa app raccoglie dati demografici di base, profilo medico, alcuni campioni di voce (quando l’utente legge testo sullo schermo) a alcuni secondi di respiro e tosse. La app raccoglie anche un campione della locazione dell’utente. Nota che devi avere almeno 16 anni. È possibile visualizzare la nostra politica sulla privacy all'indirizzo covid-19-sounds.org/privacy.html\n\n"
+
+    },
+    {
+      "id": "User_sex",
+      "type": "RadioButtons",
+      "text": "Di che sesso sei?",
+      "options": [
+        "Maschio",
+        "Femmina",
+        "Altro",
+        "Preferisco non dirlo"
+      ]
+    },
+    {
+      "id": "User_age",
+      "type": "RadioButtons",
+      "text": "Quanti anni hai?",
+      "options": [
+        "Meno di 20",
+        "20-29",
+        "30-39",
+        "40-49",
+        "50-59",
+        "60-69",
+        "70-79",
+        "80-89",
+        "Piu’ di 90",
+        "Preferisco non dirlo"
+
+      ]
+    },
+    {
+      "id": "Medical_history",
+      "type": "Checkbox",
+      "text": "Hai altre di queste malattie? (può scegliere più di uno)",
+      "options": [
+        "Nessuna",
+        "Preferisco non dirlo",
+        "Asma",
+        "Fibrosi Cistica",
+        "Enfisema",
+        "Fibrosi Polmonare",
+        "Altra patologia polmonare",
+        "Pressione Alta",
+        "Angina",
+        "Ictus o Ischemia",
+        "Infarto (anche passato)",
+        "Patologie alle valvole cardiache",
+        "Altre patologie cardiache",
+        "Diabete",
+        "Cancro",
+        "Ricevuto trapianto di organi",
+        "AIDS o sistema immunitario compromesso",
+        "Altre patologie croniche"
+      ]
+    },
+
+    {
+      "id": "Smoking",
+      "type": "RadioButtons",
+      "text": "Fumi o hai mai fumato (anche sigarette elettroniche)?",
+      "options": [
+        "Mai Fumato",
+        "Preferisco non dirlo",
+        "Ho fumato in passato",
+        "Fumo (da 1 a 10 sigarette al giorno)",
+        "Fumo (11 o piu’ sigarette al giorno)"
+      ]
+    },
+    {
+      "id": "thankyou",
+      "type": "Info",
+      "text": "Grazie! La tua partecipazione a questo questionario e’ molto utile alla nostra ricerca. Ora passiamo al questionario dei sintomi.\n\n"
+    }
+  ]
+}

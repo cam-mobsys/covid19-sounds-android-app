@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">COVID-19 Sounds</string>
+    <string name="question_submit">जमा करे</string>
+    <string name="next">अगला</string>
+    <string name="submit">जमा करे</string>
+    <string name="record">रिकॉर्ड</string>
+    <string name="delete">मिटाए</string>
+    <string name="Survey">सर्वेक्षण शुरू करें</string>
+    <string name="stop">रुकें</string>
+    <string name="Record">रिकॉर्ड</string>
+    <string name="thanks">दैनिक सर्वेक्षण पूरा करने और COVID-19 अनुसंधान में योगदान देने के लिए धन्यवाद!</string>
+    <string name="welcome">COVID-19 साउंड्स ऐप में आपका स्वागत है, और आपके योगदान के लिए धन्यवाद।\n\nसर्वेक्षण शुरू करने के लिए नीचे दिए गए बटन पर क्लिक करें\n\nकृपया इस सर्वेक्षण को दोहराएं जब जब एप्लिकेशन द्वारा हर कुछ दिनों मे इसके लिए कहा जाए। इससे हमें बीमारी के क्रमागत उन्नति का अनुसरण करने मे मदद मिलेगीै।\n\nपरियोजना के बारे में अधिक जानकारी covid-19-sounds.org और  आपके डेटा की गोपनीयता की जानकारी covid-19-sounds.org/privacy.htm पर उपलब्ध है।
+</string>
+    <string name="post_questionnaire">परियोजना में अपने डेटा को योगदान देने के लिए बहुत-बहुत धन्यवाद।\n\nहम आपको प्रश्नावली को फिर से पूरा करने के लिए कुछ दिनों में एक नोटिफिकेशन भेजेंगे।\n\nपरियोजना के बारे में अधिक जानकारी के लिए, कृपया covid-19-sounds.org पर परियोजना की वेबसाइट देखें।\n\nआप हमारी गोपनीयता नीति covid-19-sounds.org/privacy.html पर देख सकते हैं।</string>
+    <string name="insert_answer">Insert answer</string>
+    <string name="post_questionnaire_user_bits">यह  आपकी यूजर आईडी है: %1$s</string>
+    <string name="consent">सहमति दे</string>
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Звуки КОВИД-19</string>
+    <string name="question_submit">Отправить</string>
+    <string name="next">Далее</string>
+    <string name="submit">Отправить</string>
+    <string name="record">Начать запись</string>
+    <string name="delete">Удалить</string>
+    <string name="Survey">Начать опрос</string>
+    <string name="stop">Стоп</string>
+    <string name="Record">Начать запись</string>
+    <string name="thanks">Спасибо, что заполнили ежедневный опрос, и благодарим за ваш вклад в исследование COVID-19!</string>
+    <string name="welcome">Добро пожаловать в приложение «Звуки КОВИД-19» и спасибо за вашу помощь. \n \n Нажмите на кнопку ниже, чтобы начать опрос. \n \n Пожалуйста, пройдите этот опрос повторно, когда приложение пришлет вам уведомление (каждые несколько дней). Повторное заполнение опроса позволит нам наблюдать за развитием болезни. Вы можете найти дополнительную информацию о проекте на сайте covid-19-sounds.org, и узнать, как мы используем и храним ваши данные на covid-19-sounds.org/privacy.html</string>
+    <string name="post_questionnaire">Большое спасибо, что поделились своими данными для проекта. \n \n Через несколько дней вы получите уведомление с просьбой заполнить анкету еще раз. \n \n Для дополнительной информации о проекте, вы можете посетить веб-сайт covid-19-sounds.org \n \n Также можете ознакомиться с нашей политикой конфиденциальности перейдя по ссылке covid-19-sounds.org/privacy.html</string>
+    <string name="insert_answer">Ввести ответ</string>
+    <string name="post_questionnaire_user_bits">Ваш номер пользователя: %1$s</string>
+    <string name="consent">Cогласен</string>
+</resources>

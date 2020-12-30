@@ -1,0 +1,118 @@
+{
+  "questions": [
+    {
+    	"id": "symptoms",
+    	"type": "Checkbox",
+    	"text": "Présentez-vous l'un des symptômes suivants présentement? (peut en choisir plusieurs)",
+		"options": [
+			"Aucun",
+			"Je préfère ne pas répondre",
+			"Fièvre (Sensation de fièvre)",
+			"Frissons",
+			"Toux sèche",
+			"Toux grasse",
+			"Difficulté à respirer ou essoufflement",
+			"Pression à la poitrine",
+			"Perte de goût et d'odeur",
+			"Étourdissements, confusion ou vertiges",
+			"Maux de tête",
+			"Courbatures",
+			"Gorge irritée",
+			"Nez qui coule ou bouché"]
+	},
+	  {
+		  "id": "covid",
+		  "type": "RadioButtons",
+		  "text": "Quel est votre statut de test COVID-19 actuel?",
+		  "options": [
+			  "Jamais testé",
+			  "Positive",
+			  "Négative",
+			  "Je préfère ne pas répondre"
+		  ]
+	  },
+
+	  {
+		  "id": "never_covid",
+		  "type": "RadioButtons",
+		  "text": "Pensez-vous que vous avez déjà eu une infection à COVID-19?",
+		  "options": [
+			  "Oui maintenant",
+			  "Oui, au cours des 14 derniers jours",
+			  "Oui, il y a plus de 14 jours",
+			  "Jamais"
+		  ],
+		  "dependency": {
+			  "id": "covid",
+			  "answer": "Never Tested"
+		  }
+	  },
+
+	  {
+		  "id": "positive_covid",
+		  "type": "RadioButtons",
+		  "text": "Quand avez-vous été testé positif?",
+		  "options": [
+			  "Au cours des 14 derniers jours",
+			  "Il y a plus de 14 jours"
+		  ],
+		  "dependency": {
+			  "id": "covid",
+			  "answer": "Positive"
+		  }
+	  },
+	  {
+		  "id": "negative_covid",
+		  "type": "RadioButtons",
+		  "text": "Avez-vous déjà été testé positif?",
+		  "options": [
+			  "Jamais",
+			  "Au cours des 14 derniers jours",
+			  "Il y a plus de 14 jours"
+		  ],
+		  "dependency": {
+			  "id": "covid",
+			  "answer": "Negative"
+		  }
+	  },
+	  {
+		  "id": "hospital",
+		  "type": "RadioButtons",
+		  "text": "Êtes-vous à l'hôpital présentement ?",
+		  "options": [
+			  "Oui",
+			  "Non",
+			  "Je préfère ne pas répondre"
+		  ]
+	  },
+	  {
+		  "id": "breathe",
+		  "type": "AudioRecord",
+		  "text": "Appuyez sur \"enregistrer\" ci-dessous et inspirez et expirez de votre bouche aussi profondément que possible cinq fois. Veuillez le faire dans un environnement calme. Enfin appuyez sur 'arrêter'.",
+		  "options": [
+			  "30"
+		  ]
+	  },
+    {
+    	"id": "cough",
+    	"type": "AudioRecord",
+    	"text": "Appuyez sur 'enregistrer' ci-dessous et toussez trois fois. Enfin appuyez sur 'arrêter'.",
+		"options": [
+			"10"
+		]
+	},
+	  {
+		  "id": "instructions",
+		  "type": "Info",
+      "text": "Sur l'écran suivant, nous afficherons du texte que vous devrez lire.\nNe vous inquiétez pas si vous toussez en lisant, continuez juste à enregistrer."
+	  },
+	  {
+		  "id": "voice",
+		  "type": "AudioRecord",
+		  "text": "Appuyez sur 'enregistrer' ci-dessous et lisez à voix haute trois fois la phrase suivante, ensuite appuyez sur 'arrêter':\n\n''J'espère que mes données pourront aider à gérer la pandémie de virus.''",
+		  "options":[
+			  "30"
+		  ]
+	  }
+    ]
+}

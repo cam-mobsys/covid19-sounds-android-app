@@ -1,0 +1,119 @@
+{
+  "questions": [
+    {
+    	"id": "symptoms",
+    	"type": "Checkbox",
+    	"text": "Do you have any of the following symptoms today? (can choose more than one)",
+		"options": [
+			"None",
+			"Prefer not to say",
+			"Fever (feeling feverish or warmer than usual)",
+			"Chills",
+			"Dry cough",
+			"Wet cough",
+			"Difficulty breathing or feeling short of breath",
+			"Tightness in your chest",
+			"Loss of taste and smell",
+			"Dizziness, confusion or vertigo",
+			"Headache",
+			"Muscle aches",
+			"Sore throat",
+			"Runny or blocked nose"]
+	},
+	  {
+		  "id": "covid",
+		  "type": "RadioButtons",
+		  "text": "What is your current COVID-19 testing status?",
+		  "options": [
+			  "Never Tested",
+			  "Positive",
+			  "Negative",
+			  "Prefer not to say"]
+	  },
+	  {
+		  "id": "never_covid",
+		  "type": "RadioButtons",
+		  "text": "Do you think you ever have/had a COVID-19 infection?",
+		  "options": [
+			  "Yes, Now",
+			  "Yes, In last 14 days",
+			  "Yes, More than 14 days ago",
+			  "Never"
+		  ],
+		  "dependency": {
+			  "id": "covid",
+			  "answer": "Never Tested"
+		  }
+	  },
+
+	  {
+		  "id": "positive_covid",
+		  "type": "RadioButtons",
+		  "text": "When did you test positive?",
+		  "options": [
+			  "In the last 14 days",
+			  "More than 14 days ago"
+		  ],
+		  "dependency": {
+			  "id": "covid",
+			  "answer": "Positive"
+		  }
+	  },
+	  {
+		  "id": "negative_covid",
+		  "type": "RadioButtons",
+		  "text": "Have you tested positive before?",
+		  "options": [
+			  "Never",
+			  "In the last 14 days",
+			  "More than 14 days ago"
+		  ],
+		  "dependency": {
+			  "id": "covid",
+			  "answer": "Negative"
+		  }
+	  },
+	  {
+		  "id": "hospital",
+		  "type": "RadioButtons",
+		  "text": "Are you in hospital now?",
+		  "options": [
+			  "Yes",
+			  "No",
+			  "Prefer not to say"
+		  ]
+	  },
+	  {
+		  "id": "breathe",
+		  "type": "AudioRecord",
+		  "text": "Press 'record' below and breathe in and out from your mouth as deeply as you can five times. Please do so in a quiet environment. Then press 'stop'.",
+		  "options": [
+			  "30"
+		  ]
+	  },
+    {
+    	"id": "cough",
+    	"type": "AudioRecord",
+    	"text": "Press 'record' below and cough three times. Then press 'stop'.",
+		"options": [
+			"10"
+		]
+	},
+	  {
+		  "id": "instructions",
+		  "type": "Info",
+		  "text": "On the next screen we will display text you should read.\nDon't worry if you cough while reading, please keep recording."
+
+	  },
+	  {
+		  "id": "voice",
+		  "type": "AudioRecord",
+		  "text": "Please press 'record' below and read aloud the following sentence 3 times, then press 'stop':\n\n''I hope my data can help to manage the virus pandemic.''",
+		  "options":[
+			  "30"
+		  ]
+	  }
+    ]
+}
+
+

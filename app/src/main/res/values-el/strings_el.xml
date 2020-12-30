@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">COVID-19 Sounds</string>
+    <string name="question_submit">Υποβολή</string>
+    <string name="next">Επόμενο</string>
+    <string name="submit">Υποβολή</string>
+    <string name="record">Εγγραφή</string>
+    <string name="delete">Διαγραφή</string>
+    <string name="Survey">Έναρξη ερωτηματολογίου</string>
+    <string name="stop">Διακοπή</string>
+    <string name="Record">Εγγραφή</string>
+    <string name="thanks">Σας ευχαριστούμε για τη συμπλήρωση της ημερήσιας έρευνας και για τη συνεισφοράς σας στη μελέτη μας για το COVID-19!</string>
+    <string name="welcome">Καλώς ήλθατε στην εφαρμογή COVID-19 Sounds και σας ευχαριστώ για το χρόνο σας. Κάντε κλικ παρακάτω για να ξεκινήσετε.\n\n Επαναλάβετε αυτήν τη σύντομη διαδικασία όταν λαμβάνετε ειδοποίηση κάθε λίγες μέρες, καθώς αυτό θα μας βοηθήσει να παρακολουθούμε την πρόοδο της νόσου. Περισσότερες πληροφορίες σχετικά με το έργο μπορείτε να βρείτε στο covid-19-sounds.org και πώς χειριζόμαστε τα δεδομένα σας εδώ στη διεύθυνση covid-19-sounds.org/privacy.html</string>
+    <string name="post_questionnaire">Σας ευχαριστούμε πολύ για τη συνεισφορά των δεδομένων σας σε αυτό ακαδημαϊκό πρότζεκτ.\n\nΘα σας στείλουμε μια ειδοποίηση για να συμπληρώσετε τις ερωτήσεις ξανά σε μερικές ημέρες.\n\nΠεραιτέρω πληροφορίες για το πρότζεκτ βρίσκονται στο covid-19-sounds.org και για το πώς χειριζόμαστε τα δεδομένα σας εδώ covid-19-sounds.org/privacy.html</string>
+    <string name="insert_answer">Απαντήστε εδώ</string>
+    <string name="post_questionnaire_user_bits">Αυτός είναι ο αριθμός χρήστη (user ID): %1$s</string>
+    <string name="consent">συγκατάθεση</string>
+
+</resources>

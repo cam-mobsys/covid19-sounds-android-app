@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">COVID-19 Sounds</string>
+    <string name="question_submit">Trimite</string>
+    <string name="next">Înainte</string>
+    <string name="submit">Trimite</string>
+    <string name="record">Înregistrează</string>
+    <string name="delete">Șterge</string>
+    <string name="Survey">Începe sondajul</string>
+    <string name="stop">Stop</string>
+    <string name="Record">Înregistrează</string>
+    <string name="thanks">Vă mulțumim pentru completarea sondajului zilnic și pentru contribuția la cercetarea COVID-19!</string>
+    <string name="welcome">Bun venit la aplicația COVID-19 Sounds și vă mulțumim pentru contribuție.\n\nApăsați pe butonul de mai jos pentru a începe sondajul.\n\nVă rugăm să refaceți acest sondaj când vi se solicită de către aplicație la fiecare câteva zile, deoarece datele obținute în timp ne permit să urmărim evoluția bolii. Mai multe informații legate de proiect le puteți găsii la covid-19-sounds.org, iar informații legate de cum folosim datele dumneavoastră la covid-19-sounds.org/privacy.html</string>
+    <string name="post_questionnaire">Vă mulțumim foarte mult pentru contribuția datelor dumneavoastră la proiect.\n\nVă vom trimite o notificare în câteva zile pentru a vă solicita să completați din nou chestionarul.\n\nPentru mai multe informații legate de proiect, vă rugam să vizitați website-ul proiectului covid-19-sounds.org. Puteți să vizualizați politica de confidențialitate pe covid-19-sounds.org/privacy.html</string>
+    <string name="insert_answer">Insert answer</string>
+    <string name="post_questionnaire_user_bits">Iată ID-ul dvs. de utilizator: %1$s</string>
+    <string name="consent">Consimțământ</string>
+</resources>

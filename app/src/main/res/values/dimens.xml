@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="card_padding">20sp</dimen>
+    <dimen name="elem_spacing">10sp</dimen>
+    <dimen name="text_size_question">14sp</dimen>
+</resources>

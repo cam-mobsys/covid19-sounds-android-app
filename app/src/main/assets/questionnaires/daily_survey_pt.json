@@ -1,0 +1,121 @@
+{
+  "questions": [
+    {
+    	"id": "symptoms",
+    	"type": "Checkbox",
+    	"text": "Você tem algum desses sintomas hoje? (Você pode escolher mais do que uma opção)",
+		"options": [
+			"Nenhum",
+			"Prefiro não dizer",
+			"Febre",
+			"Calafrios",
+			"Tosse seca",
+			"Tosse com catarro",
+			"Dificuldade de respirar ou falta de ar",
+			"Dor no peito",
+			"Perda de paladar e olfato",
+			"Tontura, confusão ou vertigem",
+			"Dor de cabeça",
+			"or muscular",
+			"Dor de garganta",
+			"Nariz entupido"]
+	},
+	  {
+		  "id": "covid",
+		  "type": "RadioButtons",
+		  "text": "Qual é o seu status atual de teste COVID-19?",
+		  "options": [
+			  "Nunca testado",
+			  "Positivo",
+			  "Negativo",
+			  "Prefiro não dizer"
+		  ]
+	  },
+
+	  {
+		  "id": "never_covid",
+		  "type": "RadioButtons",
+		  "text": "Você acha que você já teve uma infecção de COVID-19?",
+		  "options": [
+			  "Sim, tenho agora",
+			  "Sim, nos últimos 14 dias",
+			  "Sim, 14 dias atrás",
+			  "Nunca"
+		  ],
+		  "dependency": {
+			  "id": "covid",
+			  "answer": "Never Tested"
+		  }
+	  },
+
+	  {
+		  "id": "positive_covid",
+		  "type": "RadioButtons",
+		  "text": "Quando foi que você testou positivo?",
+		  "options": [
+			  "Nos últimos 14 dias",
+			  "Faz mais do que 14 dias"
+		  ],
+		  "dependency": {
+			  "id": "covid",
+			  "answer": "Positive"
+		  }
+	  },
+	  {
+		  "id": "negative_covid",
+		  "type": "RadioButtons",
+		  "text": "Você testou positivo antes?",
+		  "options": [
+			  "Nunca",
+			  "Nos últimos 14 dias",
+			  "Faz mais do que 14 dias"
+		  ],
+		  "dependency": {
+			  "id": "covid",
+			  "answer": "Negative"
+		  }
+	  },
+	  {
+		  "id": "hospital",
+		  "type": "RadioButtons",
+		  "text": "Você está no hospital agora?",
+		  "options": [
+			  "Sim",
+			  "Não",
+			  "Prefiro não dizer"
+		  ]
+	  },
+	  {
+		  "id": "breathe",
+		  "type": "AudioRecord",
+		  "text": "Pressione 'record' abaixo e respire e expire pela boca o mais profundamente que puder cinco vezes. Por favor, faça-o em um ambiente silencioso. Em seguida, pressione 'parar'.",
+		  "options": [
+			  "30"
+		  ]
+	  },
+    {
+    	"id": "cough",
+    	"type": "AudioRecord",
+    	"text": "Pressione 'record' abaixo e tosse três vezes. Então pressione 'parar'.",
+		"options": [
+			"10"
+		]
+	},
+	  {
+		  "id": "instructions",
+		  "type": "Info",
+		  "text": "Na próxima tela, exibiremos o texto que você deve ler.\nNão se preocupe se tossir durante a leitura, continue gravando."
+
+	  },
+	  {
+		  "id": "voice",
+		  "type": "AudioRecord",
+		  "text": "Pressione 'record' abaixo e leia a seguinte frase em voz alta 3 vezes, depois pressione 'stop':\n\n''Eu espero que os meus dados possam ajudar a controlar essa pandemia.''",
+		  "options":[
+			  "30"
+		  ]
+	  }
+    ]
+}
+
+

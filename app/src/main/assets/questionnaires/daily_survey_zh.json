@@ -1,0 +1,121 @@
+﻿{
+  "questions": [
+    {
+    	"id": "symptoms",
+    	"type": "Checkbox",
+    	"text": "您今天有以下症状吗？(可多选)",
+		"options": [
+			"以下均没有",
+			"不方便透露",
+			"发烧(感觉发热或者体温比平时高)",
+			"感觉发冷",
+			"干咳",
+			"湿咳",
+			"呼吸困难或者气短",
+			"胸闷",
+			"丧失味觉和嗅觉",
+			"头晕、犯困或者眩晕",
+			"头疼",
+			"肌肉酸疼",
+			"喉咙痛",
+			"流鼻涕或者鼻塞"]
+	},
+	  {
+		  "id": "covid",
+		  "type": "RadioButtons",
+		  "text": "您现在的新冠核酸检测结果是?",
+		  "options": [
+			  "从未检测过",
+			  "阳性",
+			  "阴性",
+			  "不方便透露"
+		  ]
+	  },
+	  {
+		  "id": "never_covid",
+		  "type": "RadioButtons",
+		  "text": "您感染过新冠肺炎吗?",
+		  "options": [
+			  "是的，现在是患者",
+			  "是的，14天内确诊的",
+			  "是的，14天前感染过",
+			  "从未"
+		  ],
+		  "dependency": {
+			  "id": "covid",
+			  "answer": "Never Tested"
+		  }
+	  },
+
+
+
+	  {
+		  "id": "positive_covid",
+		  "type": "RadioButtons",
+		  "text": "您什么时候核酸检测呈阳性?",
+		  "options": [
+			  "14天以内",
+			  "14天之前"
+		  ],
+		  "dependency": {
+			  "id": "covid",
+			  "answer": "Positive"
+		  }
+	  },
+	  {
+		  "id": "negative_covid",
+		  "type": "RadioButtons",
+		  "text": "您核算检测呈阳性过吗?",
+		  "options": [
+			  "从未",
+			  "14天以内",
+			  "14天之前"
+		  ],
+		  "dependency": {
+			  "id": "covid",
+			  "answer": "Negative"
+		  }
+	  },
+	  {
+		  "id": "hospital",
+		  "type": "RadioButtons",
+		  "text": "您现在在医院吗？",
+		  "options": [
+			  "是的",
+			  "没有",
+			  "不方便透露"
+		  ]
+	  },
+	  {
+		  "id": "breathe",
+		  "type": "AudioRecord",
+		  "text": "请您在一个安静的环境中，点击下方的“录音”键，然后用嘴深呼吸五次，再按下“暂停”键完成录制。",
+		  "options": [
+			  "30"
+		  ]
+	  },
+    {
+    	"id": "cough",
+    	"type": "AudioRecord",
+    	"text": "请点击下方的“录音”键，咳嗽三次，再按下“暂停”键完成录制。",
+		"options": [
+			"10"
+		]
+	},
+	  {
+		  "id": "instructions",
+		  "type": "Info",
+		  "text": "下面将展示您需要朗读的文字.\n不必担心朗读时咳嗽，继续完成录制即可。"
+	  },
+	  {
+		  "id": "voice",
+		  "type": "AudioRecord",
+		  "text": "请点击下方的“录音”键并大声朗读以下句子三次，然后点击“暂停”键完成录制:\n\n'希望我的数据可以帮助控制病毒的蔓延。'",
+		  "options":[
+			  "30"
+		  ]
+	  }
+    ]
+}
+
+

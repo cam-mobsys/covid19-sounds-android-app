@@ -1,0 +1,81 @@
+{
+  "questions": [
+     {
+        "id": "Initial_question",
+        "type": "Info",
+        "text": "This app aims to collect data (primarily coughs, breathing and voice) as part of a project (covid-19-sounds.org) which could inform the diagnosis of COVID-19.\n\nThe app will collect basic demographics, medical history, some voice samples (while you read text on the screen) and a few seconds of breathing and coughing. We also collect one sample of your location. Note that you must be 16 years or older. You can view our privacy policy at covid-19-sounds.org/privacy.html\n\n"
+     },
+     {
+        "id": "User_sex",
+        "type": "RadioButtons",
+        "text": "Which is your biological sex?",
+        "options": [
+	        "Male",
+	        "Female",
+            "Other",
+          "Prefer not to say"
+        ]
+     },
+     {
+        "id": "User_age",
+        "type": "RadioButtons",
+        "text": "How old are you?",
+        "options": [
+              "Under 20",
+              "20-29",
+              "30-39",
+              "40-49",
+              "50-59",
+              "60-69",
+              "70-79",
+              "80-89",
+              "90 or older",
+          "Prefer not to say"
+
+           ]
+     },
+     {
+        "id": "Medical_history",
+        "type": "Checkbox",
+        "text": "Do you have any of these medical conditions? (can choose more than one)",
+        "options": [
+          "None",
+          "Prefer not to say",
+          "Asthma",
+          "Cystic fibrosis",
+          "COPD/emphysema",
+          "Pulmonary fibrosis",
+          "Other lung disease",
+          "High blood pressure",
+          "Angina",
+          "Previous stroke or Transient Ischaemic Attack",
+          "Previous heart attack",
+          "Valvular heart disease",
+          "Other heart disease",
+          "Diabetes",
+          "Cancer",
+          "Previous organ transplant",
+          "HIV or an impaired immune system",
+          "Other long-term condition"
+           ]
+     },
+
+    {
+      "id": "Smoking",
+      "type": "RadioButtons",
+      "text": "Do you, or have you ever smoked (including e-cigarettes)?",
+      "options": [
+        "Never smoked",
+        "Prefer not to say",
+        "Ex-smoker",
+        "Current smoker (1-10 cigarettes per day)",
+        "Current smoker (11 or more cigarettes per day)"
+      ]
+    },
+    {
+      "id": "thankyou",
+      "type": "Info",
+      "text": "Thank you! Your participation is extremely helpful to us. We will now initiate a symptom survey.\n\n"
+    }
+  ]
+}

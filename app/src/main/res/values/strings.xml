@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">COVID-19 Sounds</string>
+    <string name="question_submit">Submit</string>
+    <string name="next">Next</string>
+    <string name="submit">Submit</string>
+    <string name="record">Record</string>
+    <string name="delete">Delete</string>
+    <string name="Survey">Start Survey</string>
+    <string name="stop">Stop</string>
+    <string name="Record">Record</string>
+    <string name="thanks">Thank you for completing the daily survey and contributing to COVID-19 research!</string>
+    <string name="welcome">Welcome to the COVID-19 Sounds app, and thank you for your contribution.\n\nTap the button below to start the survey.\n\nPlease repeat this survey when prompted every couple of days by the app as repeated data allow us to follow the evolution of the disease". More information about the project is at covid-19-sounds.org and how we treat your data at covid-19-sounds.org/privacy.html</string>
+    <string name="post_questionnaire">Thank you very much for contributing your data to the project.\n\nWe will send you a notification in a few days to prompt you to complete the questionnaire again.\n\nFor more information on the project, please visit the project website at covid-19-sounds.org\n\nYou can view our privacy policy at covid-19-sounds.org/privacy.html</string>
+    <string name="insert_answer">Insert answer</string>
+    <string name="post_questionnaire_user_bits">Here is your user ID: %1$s</string>
+    <string name="consent">Consent</string>
+</resources>

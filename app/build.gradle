@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "uk.ac.cam.cl.covid19sounds"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 27
+        versionName "1.1.19"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            pseudoLocalesEnabled true
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'org.apache.commons:commons-lang3:3.6'
+    implementation 'com.google.android.gms:play-services-location:17.1.0'
+    implementation "cz.msebera.android:httpclient:4.5.8"
+}

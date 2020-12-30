@@ -1,0 +1,119 @@
+{
+  "questions": [
+    {
+      "id": "symptoms",
+      "type": "Checkbox",
+      "text": "Haben Sie heute eine oder mehrere der folgenden Symptome? (kann mehr als eine auswählen)",
+      "options": ["Keiner",
+      "Keine Angabe",
+      "Fieber (fiebrig oder erhöhte Temperatur)",
+      "Schüttelfrost",
+      "trockener Husten",
+      "Husten mit Auswurf",
+      "Schwierigkeit beim Atmen oder Kurzatmigkeit",
+      "Engegefühl in der Brust",
+       "Geschmacks- und Geruchsverlust",
+        "Schwindel, Verwirrung oder Schwindel",
+      "Kopfschmerzen",
+      "Muskelschmerzen",
+      "Halsschmerzen",
+        "Laufende oder verstopfte Nase"
+      ]
+    },
+    {
+      "id": "covid",
+      "type": "RadioButtons",
+      "text": "Was ist ihre aktuelle COVID-19 Teststatus?",
+      "options": [
+        "Nie getestet",
+        "Positiv",
+        "Negativ",
+        "Mache lieber keine Angabe"
+      ]
+    },
+
+    {
+      "id": "never_covid",
+      "type": "RadioButtons",
+      "text": "Meinen sie dass sie jemals die COVID-19 Infektion hatten?",
+      "options": [
+        "Ja, im Moment",
+        "Ja, in den letzten 14 Tagen",
+        "Ja, vor mehr als 14 Tagen",
+        "Nie"
+      ],
+      "dependency": {
+        "id": "covid",
+        "answer": "Never Tested"
+      }
+    },
+
+    {
+      "id": "positive_covid",
+      "type": "RadioButtons",
+      "text": "Wann hast du positiv getestet?",
+      "options": [
+        "In den letzten 14 Tagen",
+        "Vor mehr als 14 Tagen"
+      ],
+      "dependency": {
+        "id": "covid",
+        "answer": "Positive"
+      }
+    },
+    {
+      "id": "negative_covid",
+      "type": "RadioButtons",
+      "text": "Haben sie schon einmal Positiv getestet?",
+      "options": [
+        "Nie",
+        "In den letzten 14 Tagen",
+        "Vor mehr als 14 Tagen"
+      ],
+      "dependency": {
+        "id": "covid",
+        "answer": "Negative"
+      }
+    },
+    {
+      "id": "hospital",
+      "type": "RadioButtons",
+      "text": "Sind Sie zur Zeit im Krankenhaus?",
+      "options": [
+        "Ja",
+      "Nein",
+      "Keine Angabe"
+    ]
+    },
+    {
+      "id": "breathe",
+      "type": "AudioRecord",
+      "text": "Drücken Sie die Aufnahmetaste und atmen Sie fünf Mal so tief wie möglich in Ihren Mund ein und aus. Bitte tun Sie dies in einer ruhigen Umgebung. Drücken Sie dann 'Stop'",
+      "options": [
+        "30"
+      ]
+    },
+    {
+      "id": "cough",
+      "type": "AudioRecord",
+      "text": "Drücken Sie die ‚Aufnahme‘-Taste und husten Sie dreimal. Anschließend drücken Sie ‚Stop‘",
+      "options": [
+        "10"
+      ]
+    },
+    {
+      "id": "instructions",
+      "type": "Info",
+      "text": "Auf der nächsten Seite wird Ihnen ein Text angezeigt werden, welchen Sie laut vorlesen sollten.\n Es ist kein Problem wenn Sie husten müssen, bitte halten Sie aber die Aufnahme währenddessen nicht an."
+
+    },
+    {
+      "id": "voice",
+      "type": "AudioRecord",
+      "text": "Bitte drücken Sie die ‚Aufnahme‘-Taste und lesen den folgenden Satz dreimal laut vor. Anschließend drücken Sie ‚Stop‘:\n\n’’Ich hoffe meine Daten können zur Eindämmung der Virus Pandemie beitragen.’’",
+      "options":[
+        "30"
+      ]
+    }
+  ]
+}

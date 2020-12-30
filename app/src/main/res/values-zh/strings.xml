@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">COVID-19之声</string>
+    <string name="question_submit">提交</string>
+    <string name="next">下一页</string>
+    <string name="submit">提交</string>
+    <string name="record">录音</string>
+    <string name="delete">删除</string>
+    <string name="Survey">开始填写问卷</string>
+    <string name="stop">暂停</string>
+    <string name="Record">录音</string>
+    <string name="thanks">感谢您完成问卷和为COVID-19研究所做出的贡献！</string>
+    <string name="welcome">感谢您使用COVID-19之声应用程序，感谢您的参与。\n\n点击下方按钮进入问卷。\n\n请您每隔几日在应用程序提醒时完成问卷，因为连续的数据将有助于我们追踪疾病的发展。了解更多关于此项目的信息请访问 covid-19-sounds.org ，了解关于我们如何使用您的数据请访问 covid-19-sounds.org/privacy.html</string>
+    <string name="post_questionnaire">非常感谢您为本项目提供数据。\n\n几天后我们将再次给您发送通知，提醒您重新填写问卷。\n\n了解更多关于此项目的信息请访问我们的网站 covid-19-sounds.org 。\n\n您也可以在 covid-19-sounds.org/privacy.html 上查阅我们的隐私政策。</string>
+    <string name="insert_answer">开始作答</string>
+    <string name="post_questionnaire_user_bits">这是您的用户ID: %1$s</string>
+    <string name="consent">我同意</string>
+</resources>

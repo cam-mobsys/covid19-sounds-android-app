@@ -1,0 +1,119 @@
+{
+  "questions": [
+    {
+      "id": "symptoms",
+      "type": "Checkbox",
+      "text": "¿Notas alguno de los siguientes síntomas? (Puede elegir más de uno)",
+      "options": [
+        "Ninguno",
+        "Prefiero no decirlo",
+        "Fiebre (sensación de frío/calor)",
+        "Escalofríos",
+        "Tos seca",
+        "Tos productiva",
+        "Dificultad respiratoria o con falta de aliento",
+        "Opresión en el pecho",
+        "Pérdida de sabor y olfato",
+        "Mareos, confusión o vértigo",
+        "Dolor de cabeza",
+        "Dolor muscular",
+        "Irritación de garganta",
+        "Mucosidad nasal"]
+    },
+    {
+      "id": "covid",
+      "type": "RadioButtons",
+      "text": "¿Te han hecho el test COVID-19?",
+      "options": [
+        "Nunca",
+        "Sí, positivo",
+        "Sí, negativo",
+        "Prefiero no decirlo"
+      ]
+    },
+
+    {
+      "id": "never_covid",
+      "type": "RadioButtons",
+      "text": "¿Crees que has tenido el COVID-19?",
+      "options": [
+        "Sí, ahora",
+        "Sí, en los últimos 14 días",
+        "Sí, hace más de 14 días",
+        "Nunca"
+      ],
+      "dependency": {
+        "id": "covid",
+        "answer": "Never Tested"
+      }
+    },
+
+    {
+      "id": "positive_covid",
+      "type": "RadioButtons",
+      "text": "¿Cuándo diste positivo para el test del COVID-19?",
+      "options": [
+        "En los últimos 14 días",
+        "Hace más de 14 días"
+      ],
+      "dependency": {
+        "id": "covid",
+        "answer": "Positive"
+      }
+    },
+    {
+      "id": "negative_covid",
+      "type": "RadioButtons",
+      "text": "¿Has dado positivo en alguna ocasión?",
+      "options": [
+        "Nunca",
+        "En los últimos 14 días",
+        "Hace más de 14 días"
+      ],
+      "dependency": {
+        "id": "covid",
+        "answer": "Negative"
+      }
+    },
+    {
+      "id": "hospital",
+      "type": "RadioButtons",
+      "text": "¿Estàs ingresado/a en el hospital?",
+      "options": [
+        "Sí",
+        "No",
+        "Prefiero no decirlo"
+      ]
+    },
+    {
+      "id": "breathe",
+      "type": "AudioRecord",
+      "text": "Presione 'grabar' a continuación e inhale y exhale por la boca tan profundamente como pueda cinco veces.  Por favor hágalo en un ambiente tranquilo. Después, presiona 'Parar grabación'.",
+      "options": [
+        "30"
+      ]
+    },
+    {
+      "id": "cough",
+      "type": "AudioRecord",
+      "text": "Presiona 'Grabar' y a continuación tose 3 veces. Después, presiona 'Parar grabación'.",
+      "options": [
+        "10"
+      ]
+    },
+    {
+      "id": "instructions",
+      "type": "Info",
+      "text": "En la siguiente pantalla te mostraremos un texto que debes leer en voz alta. \nNo te preocupes si toses mientras lees, por favor, sigue leyendo."
+
+    },
+    {
+      "id": "voice",
+      "type": "AudioRecord",
+      "text": "Por favor, presiona 'Grabar' y a continuación lee en voz alta la siguiente frase 3 veces. Después, presiona 'Parar grabación':\n\n''Confío que mis datos puedan ayudar en el manejo de la pandemia vírica.''",
+      "options":[
+        "30"
+      ]
+    }
+  ]
+}

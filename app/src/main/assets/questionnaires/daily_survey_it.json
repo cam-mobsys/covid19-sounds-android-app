@@ -1,0 +1,121 @@
+{
+  "questions": [
+    {
+      "id": "symptoms",
+      "type": "Checkbox",
+      "text": "Hai uno dei seguenti sintomi? (può scegliere più di uno)",
+      "options": [
+        "Nessuno",
+        "Preferisco non dirlo",
+        "Febbre",
+        "Brividi",
+        "Tosse secca",
+        "Tosse morbida",
+        "Difficolta’ a respirare o fiato corto",
+        "Oppressione toracica",
+        "Perdita di gusto e olfatto",
+        "Capogiri, confusione o vertigini",
+        "Mal di testa",
+        "Male ai muscoli",
+        "Mal di gola",
+        "Congestione nasale e naso che cola"]
+    },
+    {
+      "id": "covid",
+      "type": "RadioButtons",
+      "text": "Riporta lo stato del tuo tampone COVID-19",
+      "options": [
+        "Mai fatto",
+        "Positivo",
+        "Negativo",
+        "Preferisco non dirlo"
+      ]
+    },
+
+    {
+      "id": "never_covid",
+      "type": "RadioButtons",
+      "text": "Pensi di avere avuto COVID-19?",
+      "options": [
+        "Si, adesso",
+        "SI, negli ultimi 14 giorni",
+        "Si, piu' di 14 giorni fa",
+        "Mai"
+      ],
+      "dependency": {
+        "id": "covid",
+        "answer": "Never Tested"
+      }
+    },
+
+    {
+      "id": "positive_covid",
+      "type": "RadioButtons",
+      "text": "Quanto sei risultato positive a un tampone?",
+      "options": [
+        "Negli ultimi 14 giorni",
+        "Piu’ di 14 giorni fa"
+      ],
+      "dependency": {
+        "id": "covid",
+        "answer": "Positive"
+      }
+    },
+    {
+      "id": "negative_covid",
+      "type": "RadioButtons",
+      "text": "Sei stato mai testato prima?",
+      "options": [
+        "Mai",
+        "Negli ultimi 14 giorni",
+        "Piu’ di 14 giorni fa"
+      ],
+      "dependency": {
+        "id": "covid",
+        "answer": "Negative"
+      }
+    },
+    {
+      "id": "hospital",
+      "type": "RadioButtons",
+      "text": "Sei ricoverato in ospedale?",
+      "options": [
+        "Si",
+        "No",
+        "Preferisco non dirlo"
+      ]
+    },
+    {
+      "id": "breathe",
+      "type": "AudioRecord",
+      "text": "Fai clic su \"registra\" ed inspira ed espira cinque volte dalla bocca il più profondamente possibile. Si prega di farlo in un ambiente tranquillo. Quindi fai clic su \"stop\".",
+      "options": [
+        "30"
+      ]
+    },
+    {
+      "id": "cough",
+      "type": "AudioRecord",
+      "text": "Clicca “registra” e tossisci tre volte. Poi clicca stop.",
+      "options": [
+        "10"
+      ]
+    },
+    {
+      "id": "instructions",
+      "type": "Info",
+      "text": "Nella prossima schermata, apparira’ un testo da leggere.\nNon ti preoccupare se ti capita di tossire mentre leggi, continua a registrare."
+
+    },
+    {
+      "id": "voice",
+      "type": "AudioRecord",
+      "text": "Clicca “registra” e leggi ad alta voce la frase seguente tre volte. Poi clicca “stop”.\n\n''Spero che i miei dati siano utili a gestire la pandemia del virus.''",
+      "options":[
+        "30"
+      ]
+    }
+  ]
+}
+
+

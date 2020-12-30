@@ -1,0 +1,81 @@
+{
+  "questions": [
+    {
+      "id": "Initial_question",
+      "type": "Info",
+      "text": "Esta aplicación tiene como objetivo recopilar datos (principalmente tos, respiración y voz) como parte de un proyecto (covid-19-sounds.org) que podría informar el diagnóstico de COVID-19.\n\n\nLa aplicación también preguntará por datos demográficos, historial médico, algunas muestras de voz (las cuales grabaremos mientras lees unas palabras que te mostraremos en pantalla) y unos segundos respirando y tosiendo. También registraremos tu ubicación en una sola ocasión. \nTenga en cuenta que debe tener 16 años o más. Puede ver nuestra política de privacidad en covid-19-sounds.org/privacy.html\n\n"
+    },
+    {
+      "id": "User_sex",
+      "type": "RadioButtons",
+      "text": "¿Cuál es tu sexo biológico?",
+      "options": [
+        "Hombre",
+        "Mujer",
+        "Otro",
+        "Prefiero no decirlo"
+      ]
+    },
+    {
+      "id": "User_age",
+      "type": "RadioButtons",
+      "text": "¿A qué grupo de edad perteneces?",
+      "options": [
+        "Menos de 20",
+        "20-29",
+        "30-39",
+        "40-49",
+        "50-59",
+        "60-69",
+        "70-79",
+        "80-89",
+        "90 o mayor",
+        "Prefeiero no decirlo"
+
+      ]
+    },
+    {
+      "id": "Medical_history",
+      "type": "Checkbox",
+      "text": "¿Padeces alguna de las siguientes enfermedades? (Puede elegir más de uno)",
+      "options": [
+        "Ninguna",
+        "Prefiero no decirlo",
+        "Asma",
+        "Fibrosis quística",
+        "EPOC/enfisema pulmonar",
+        "Fibrosis pulmonar",
+        "Otra patología pulmonar",
+        "Hipertensión arterial",
+        "Angor pectoris/angina de pecho",
+        "Antecedente de infarto cerebral o Accidente Isquémico Transitorio",
+        "Antecedente de infarto cardíaco",
+        "Enfermedad cardíaca valvular",
+        "Otra enfermedad cardíaca",
+        "Diabetes",
+        "Cancer",
+        "Antecedente de transplante de órgano",
+        "VIH u otra inmunodeficiencia",
+        "Otra enfermedad crónica"
+      ]
+    },
+
+    {
+      "id": "Smoking",
+      "type": "RadioButtons",
+      "text": "¿Eres fumador? (incluyendo cigarrillos electrónicos)?",
+      "options": [
+        "Nunca he fumado",
+        "Prefiero no decirlo",
+        "Ex-fumador",
+        "Fumador activo (1-10 cigarrillos al día)",
+        "Fumador activo (11 o más de cigarrillos al día)"
+      ]
+    },
+    {
+      "id": "thankyou",
+      "type": "Info",
+      "text": "¡Muchas gracias! Tu participación nos es de gran ayuda. Ahora empezaremos con el cuestionario de los síntomas.\n\n"
+    }
+  ]
+}

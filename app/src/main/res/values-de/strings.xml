@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">COVID-19 Sounds</string>
+    <string name="question_submit">Absenden</string>
+    <string name="next">Nächste</string>
+    <string name="submit">Absenden</string>
+    <string name="record">Aufnahme</string>
+    <string name="delete">Löschen</string>
+    <string name="Survey">Umfragestart</string>
+    <string name="stop">Stop</string>
+    <string name="Record">Aufnahme</string>
+    <string name="thanks">Vielen Dank für Ihre Teilnahme an der täglichen Umfrage und Ihren Beitrag zu der COVID-19 Forschung!</string>
+    <string name="welcome">Herzlich Wilkommen zu der COVID-19 Sounds App, und vielen Dank für Ihre Mithilfe.\n\n Drücken Sie die Taste unten um die Umfrage zu starten.\n\n Bitte wiederholen Sie die Umfrage, sobald Sie nach ein paar Tagen über die App wieder dazu aufgefordert werden. Die wiederholte Aufnahme der Daten hilft uns die Entwicklung der Erkrankung zu verfolgen. Weitere Informationen über dieses Projekt können Sie unter covid-19-sounds.org finden und wie Ihre Daten gehandhabt werden unter covid-19-sounds.org/privacy.html</string>
+    <string name="post_questionnaire">Vielen herzlichen Dank für Ihre Mithilfe und, dass Sie Ihre Daten für dieses Projekt zu Verfügung stellen. \n\n Die App wird Ihnen alle paar Tage eine Benachrichtigung senden um sie an die erneute Teilnahme der Umfrage zu erinnern.\n\n Für weitere Informationen über dieses Projekt besuchen Sie unsere Website unter covid-19-sounds.org\n\n Unsere Datenschutz-Bestimmungen können Sie unter covid-19-sounds.org/privacy.html finden.</string>
+    <string name="insert_answer">Antwort einfügen</string>
+    <string name="post_questionnaire_user_bits">Hier ist Ihre Benutzer-ID: %1$s</string>
+    <string name="consent">Zustimmung</string>
+</resources>
