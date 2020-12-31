@@ -71,7 +71,7 @@
             tools:ignore="LockedOrientationActivity" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBNd8Hd1JMXHppom4KXwIPEdafz18vf5NU"/>
+            android:value="xxxxx"/>
 
         <service
             android:name="uk.ac.cam.cl.covid19sounds.transfer.AuthenticatorService"
